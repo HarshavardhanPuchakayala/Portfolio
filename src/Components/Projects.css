@@ -1,0 +1,253 @@
+.ProjectsSection{
+    padding: 3rem 0;
+    width: 70%;
+    margin: 0 auto;
+}
+.ProjectsHeaders{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.ProjectsHeading{
+    font-size: 2rem;
+}
+.ProjectsSubHeading{
+    display: flex;
+    align-items: center;
+    column-gap: 0.5rem;
+    font-size: 1.2rem;
+}
+.Pieace{
+    font-size: 2rem;
+}
+/*ProjectList*/
+.ProjectList{
+    display: flex;
+    justify-content: center;
+    column-gap: 40px;
+    margin: 1rem 0 3rem 0;
+}
+.ProjectList button{
+    padding: 0.5rem;
+    background-color: var(--body-color);
+}
+.ProjectListItem{
+    color: var(--text-color);
+    font-size: 1rem;
+    font-weight: 700;
+    position: relative;
+    transition: all 0.7s cubic-bezier(0.3,0,0.3,1); 
+}
+.ProjectListItem::before{
+    content: '';
+    width: 0;
+    height: 2px;
+    max-width: 80%;
+    background-color:var(--title-color-dark);
+    position: absolute;
+    bottom: -12px;
+    left: 0;
+    transition: all 0.3s cubic-bezier(0.3,0,0.3,1);
+}
+.activeWork::before,.ProjectListItem:hover::before{
+    width: 40px;
+}
+.activeWork{
+    color: var(--title-color-dark);
+}
+
+/*Project*/
+.ProjectContainer{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    gap: 2rem;
+}
+.ProjectImgWrapper{
+    border-radius: 0.75rem;
+    overflow: hidden;
+}
+.ProjectImg{
+    width: 100%;
+    height: 20vh;
+    object-fit: cover;
+    vertical-align: middle;
+    transition: all 0.4s;
+}
+.ProjectItems:hover .ProjectImg{
+    transform: scale(1.04);
+}
+.ProjectItems{
+    display: flex;
+    flex-direction: column;
+    row-gap: 0.5rem;
+}
+.ProjectTitle{
+    text-align: center;
+    margin: 0.2rem 0;
+}
+.ProjectCategory{
+    color: var(--text-color);
+    font-size: 0.8rem;
+    font-weight: 500;
+    display: block;
+}
+
+.Skillset{
+    display: flex;
+    column-gap: 0.5rem;
+    font-size: 0.9rem;
+    padding: 0 0.5rem;
+    margin-bottom: 0.5rem;
+}
+
+.Card{
+    overflow: hidden;
+    text-align: left;
+    border: 1px solid var(--text-color);
+    padding: 1.5rem;
+    border-radius: 20px;
+}
+.Card:hover{
+    border: 2px solid var(--title-color-dark);
+    cursor: pointer;
+}
+
+/*Icons*/
+.CodeIcons{
+    display: flex;
+    align-items: center;
+}
+.CodeIcons a{
+    display: flex;
+    align-items: center;
+    padding: 0 0.5rem;
+    column-gap: 0.5rem;
+    font-size: 1.1rem;
+}
+.CodeIcons p{
+    font-size: 1rem;
+    font-weight: bolder;
+    color: var(--text-color);
+}
+.CodeIcon{
+    color: var(--text-color);
+}
+.CodeIcon:hover ,.CodeIcons p:hover{
+    color: black;
+    font-weight: bold;
+}
+/*Large devices*/
+@media screen and (max-width:992px){
+    .ProjectsSection{
+        padding: 5rem 0;
+        width: 90%;
+        margin: 0 auto;
+    }
+
+
+    .ProjectsSubHeading{
+        font-size: 1rem;
+        column-gap: 0.1rem;
+        width: 100%;
+        text-align: center;
+        margin-top: 0.5rem;
+        justify-content: center;
+    }
+
+    .ProjectContainer{
+        grid-template-columns: repeat(2,1fr);
+        gap: 2rem;
+    }
+    .Pieace{
+        font-size: 1rem;
+    }
+    /*ProjectList*/
+    .ProjectList{
+        flex-direction: column;
+        margin: 1rem 0 3rem 0;
+    }
+
+.ProjectListItem{
+    font-size: 1.2rem;
+}
+.ProjectImg{
+    height: 15vh;
+}
+}
+@media screen and (max-width:576px){
+    .ProjectsSection{
+        padding: 5rem 0;
+        width: 90%;
+        margin: 0 auto;
+    }
+
+
+    .ProjectsSubHeading{
+        font-size: 1rem;
+        column-gap: 0.1rem;
+        width: 100%;
+        text-align: center;
+        margin-top: 0.5rem;
+        justify-content: center;
+    }
+
+    .ProjectContainer{
+        grid-template-columns: 1fr;
+        gap: 2rem;
+    }
+    .Pieace{
+        font-size: 1rem;
+    }
+    /*ProjectList*/
+    .ProjectList{
+        flex-direction: column;
+        margin: 1rem 0 3rem 0;
+    }
+
+.ProjectListItem{
+    font-size: 1.2rem;
+}
+.ProjectImg{
+    height: 15vh;
+}
+
+}
+
+@media screen and (max-width:350px) {
+
+    .ProjectsSection{
+        padding: 3rem 0;
+        width: 90%;
+        margin: 0 auto;
+    }
+
+
+    .ProjectsSubHeading{
+        font-size: 1rem;
+        column-gap: 0.1rem;
+        width: 100%;
+        text-align: center;
+        margin-top: 0.5rem;
+    }
+
+    .ProjectContainer{
+        grid-template-columns: 1fr;
+        gap: 2rem;
+    }
+    .Pieace{
+        display: none;
+    }
+    /*ProjectList*/
+    .ProjectList{
+        flex-direction: column;
+        margin: 1rem 0 3rem 0;
+    }
+
+.ProjectListItem{
+    font-size: 1.2rem;
+}
+.ProjectImg{
+    height: 10vh;
+}
+}

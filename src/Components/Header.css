@@ -1,0 +1,196 @@
+.EmailLink{
+    color: var(--title-color);
+    font-weight: var(--font-semi-bold);
+    text-decoration: underline;
+}
+/*Social*/
+.HomeSocial{
+    display: grid;
+    grid-template-columns: max-content;
+    row-gap: 1rem;
+}
+.HomeSocial ion-icon{
+    font-size: 1.5rem;
+    color: var(--icon-color);
+}
+.HomeSocial ion-icon:hover{
+    filter: drop-shadow(0 0 0.75rem var(--hover-color));
+}
+/*Header*/
+.homeSection{
+    padding: 10rem 0 0 0;
+}
+.homeContent{
+    padding: 5.5rem 0 0 0 ;
+    column-gap: center;
+    align-items: center;
+    grid-template-columns: 116px repeat(2,1fr);
+}
+.homeDescription{
+    max-width: 400px;
+    font-size: 1.25rem;
+    margin: 2rem auto;
+}
+.homeImg{
+    background:url('/assets/Profile.jpg');
+    background-repeat: no-repeat;
+    filter: saturate(16px);
+    background-position: center;
+    background-size: cover;
+    width: 300px;
+    height: 300px;
+    box-shadow: inset 0 0 0 9px rgb(255 255 255 / 30%);
+    order: 1;
+    justify-self: center;
+    height: 300px;
+    width: 300px;
+    animation: profilea 8s ease-in-out infinite 0.1s;
+}
+.Greeting{
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    color: var(--text-color);
+    font-size: 1rem;
+}
+.GreetingIcon{
+    width: 8%;
+}
+.Name{
+    color: rgb(20, 142, 189);
+    font-weight: bold;
+}
+.GetInTouch{
+    display: flex;
+    align-items: center;
+    gap: 0.4rem;
+    font-size: 0.8rem;
+}
+.EmailArowIcon{
+    font-size: 1rem;
+}
+
+.ScrollIcon{
+    font-size: 1.5rem;
+    color: var(--text-color);
+}
+.homeScroll{
+    display: flex;
+    align-items: center;
+    gap: 0.1rem;
+}
+.homeScrollArrow{
+    font-size: 1rem;
+    color: var(--title-color);
+}
+
+
+
+@keyframes profilea{
+    0%{
+        border-radius: 60% 40% 30% 70%/60% 30% 70% 40%;
+
+    }
+    50%{
+        border-radius: 30% 60% 70% 40%/50% 60% 30% 60%;
+    }
+    100%{
+        border-radius: 60% 40% 30% 70%/60% 30% 70% 40%;
+    }
+}
+
+.homeContainer{
+    row-gap: 7rem;
+}
+.homeScroll{
+    margin-left: 9.25rem;
+}
+.wheel{
+    animation: scroll 2s ease infinite;
+}
+@keyframes scroll{
+    0%{
+        transform: translateY(0);
+    }
+    30%{
+        transform: translateY(0.55rem);
+    }
+}
+.homeScrollName{
+    color: var(--title-color);
+    font-weight: var(--font-medium);
+    margin-right: var(--mb-0-25);
+    margin-left: 2px;
+}
+
+
+/* For large devices */
+@media screen and (max-width: 992px) {
+    .homeSection{
+        padding: 4rem 0;
+    }
+    .homeContent{
+        grid-template-columns: 100px repeat(2,1fr);
+        column-gap: 1.25rem;
+    }
+
+    .homeDescription{
+        max-width: initial;
+        margin-bottom: var(--mb-2-5);
+
+    }
+    .homeImg{
+        width: 250px;
+        height: 250px;
+        box-shadow: inset 0 0 0 8px rgb(255  255 255/30%);
+    }
+
+    .homeScroll{
+        margin-left: 7.5rem;
+    }
+  }
+  
+  /* For medium devices */
+  @media screen and (max-width: 768px) {
+    .homeSection{
+        padding: 4rem 0 2rem 0;
+    }
+    .homeContent{
+        grid-template-columns: 0.5fr 3fr;
+        padding-top: 3.5rem;
+        
+    }
+    .homeImg{
+        order: initial;
+        justify-self: initial;
+        box-shadow: inset 0 0 0 6px rgb(255  255 255/30%);
+        height: 200px;
+        height: 200px;
+    }
+    .homeData{
+        grid-column: 1/3;
+    }
+    .homeScroll{
+        display: none;
+    }
+    .GetInTouch{
+            font-size: 0.6rem;
+    }
+  }
+  
+
+  
+  /* For small devices */
+  @media screen and (max-width: 350px) {
+    .homeSection{
+        padding: 4rem 0 0rem 0;
+    }
+    .homeImg{
+        width: 180px;
+        height: 180px;
+    }
+    .GetInTouch{
+        display: none;
+    }
+  }
+  

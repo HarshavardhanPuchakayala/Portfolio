@@ -1,0 +1,108 @@
+.qualificationContainer{
+    max-width: 768px;
+}
+.qualificationSection{
+    padding:4rem 0;
+}
+.qualificationTabs{
+    display: flex;
+    justify-content: center;
+    margin-bottom: 2rem;
+}
+.qualificationButton{
+    font-size: var(--h3-font-size);
+    font-weight: var(--font-medium);
+    color: gray;
+    margin: 0 var(--mb-1);
+    cursor: pointer;
+}
+.qualificationHeaderContent{
+    text-align: center;
+    margin-bottom: 1.5rem;
+}
+.qualificationButton:hover{
+    color:var(--title-color-dark);
+
+}
+.qualificationIcon{
+    font-size: 1.8rem;
+    margin-right: var(--mb-0-25);
+}
+.qualificationActive{
+    color: var(--title-color-dark);
+}
+.qualificationSection{
+    display: grid;
+    grid-template-columns: 0.5fr;
+    justify-content: center;
+}
+.qualificationContent{
+    display: none;
+}
+.qualificationContentActive{
+    display: block;
+}
+.qualificationData{
+    display: grid;
+    grid-template-columns: 1fr max-content 1fr;
+    column-gap: 1.5rem;
+}
+
+.qualificationSubtitle{
+    display: inline-block;
+    font-size: var(--small-font-size);
+    margin-bottom: var(--mb-1);
+}
+.qualificationCalender{
+    font-size: var(--small-font-size);
+}
+.qualificationRounder{
+    display: inline-block;
+    width: 13px;
+    height: 13px;
+    background-color: var(--title-color-dark);
+    border-radius: 50%;
+}
+.qualificationLine{
+    display: block;
+    width: 1px;
+    height: 100%;
+    background-color: var(--title-color-dark);
+    transform: translate(6px,-7px);
+}
+
+@media screen and (max-width:992px) {
+    .qualificationContainer{
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .qualificationSection{
+        padding: 0;
+    }
+}
+@media screen and (max-width:768px) {
+    .qualificationContainer{
+        margin-left: var(--mb-1-5);
+        margin-right: var(--mb-1-5);
+    }
+    .qualificationSection{
+        padding: 0;
+    }
+}
+@media screen and (max-width:576px) {
+    .qualificationSection{
+        grid-template-columns: initial;
+        padding: 0;
+    }
+    .qualificationButton{
+        margin: 0 var(--mb-0-75);
+    }
+}
+@media  screen and (max-width:350px) {
+    .qualificationData{
+        gap:0.5rem;
+    }
+    .qualificationSection{
+        padding: 0;
+    }
+}

@@ -1,0 +1,190 @@
+.LatestProjectsSection{
+    width: 70%;
+    margin: 1rem auto;
+    padding: 6rem 0;
+}
+.LatestProjectsHeader{
+    text-align: center;
+}
+.LatestProjectContent{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    column-gap: 2rem;
+    padding: 4rem 0;
+}
+
+.LatestProjectsImgContainer{
+    background: url('/assets/Coffe.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    padding: 4rem;
+    border-radius: 1rem;
+}
+.LatestProjectsImg{
+    width: 350px;
+    border-radius: 1.5rem;
+    justify-self: center;
+}
+.LatestProjectsDescription{
+    display: flex;
+    flex-direction: column;
+    row-gap: 0.5rem;
+    padding: 0 4rem;
+    
+}
+.LatestProjectTitle{
+    display: flex;
+    align-items: center;
+    font-size: 1.5rem;
+    column-gap: 0.5rem;
+    color: var(--title-color-dark);
+}
+.CoffeIcon{
+    font-size: 1.5rem;
+    color: rgb(239, 215, 185);
+}
+.LatestProjectText{
+    font-size: 1rem;
+}
+.LatestProjectsLanguages{
+    display: flex;
+    column-gap: 1rem;
+    justify-content: center;
+    margin: 0.5rem 0;
+}
+.LatestProjectsLanguages h5{
+    font-size: 1.1rem;
+    color: var(--title-color-dark);
+}
+.LatestProjectsLiveServerCode{
+    display: flex;
+    column-gap: 2rem;
+    justify-content: center;
+}
+.LatestProjectsLiveServerCode a{
+    display: flex;
+    align-items: center;
+    column-gap: 0.5rem;
+    font-size: 1rem;
+    color: var(--title-color);
+}
+.LatestProjectsLiveServerCode a:hover{
+    color: var(--title-color-dark);
+}
+.CodeIcon{
+    font-size: 1.4rem;
+}
+.Reverse{
+    grid-auto-flow: dense;
+    direction: rtl;
+}
+.ReverseDescription{
+    display: flex;
+    justify-content: end;
+    text-align: end;
+}
+.ReverseTitle{
+    display: flex;
+    justify-content: end;
+    flex-direction: row-reverse;
+}
+.ReverseContent{
+    display: flex;
+    flex-direction: row-reverse;
+}
+.ExclusiveIcon{
+    color: var(--title-color-dark);
+}
+.DoctorIcon{
+    color:rgb(9, 157, 9);
+}
+.LatestProjectsImgContainerEcommerce{
+    background: url('/assets/Ecommerce.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 4rem;
+    border-radius: 1rem;
+}
+.LatestProjectsImgContainerDoctor{
+    background: url('/assets/Pharma.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    padding: 4rem;
+    border-radius: 1rem;
+}
+
+/*Large devices*/
+@media screen and (max-width:992px){
+ 
+    .LatestProjectsSection{
+        width: 90%;
+        margin: 1rem auto;
+        padding: 0;
+    }
+    .LatestProjectContent{
+        grid-template-columns: 1fr;
+        row-gap: 1rem;
+    }
+
+    .LatestProjectsImgContainer,.LatestProjectsImgContainerDoctor,.LatestProjectsImgContainerEcommerce{
+        padding: 4rem;
+        height: 20vh;
+    }
+
+    .LatestProjectsDescription{
+        column-gap: 1rem;
+        padding: 0;
+    }
+    .LatestProjectTitle{
+        margin: 0.2rem 0;
+    }
+}
+@media screen and (max-width:576px){
+ 
+    .LatestProjectsSection{
+        width: 90%;
+        margin: 1rem auto;
+    }
+    .LatestProjectContent{
+        grid-template-columns: 1fr;
+        row-gap: 1rem;
+    }
+
+    .LatestProjectsImgContainer,.LatestProjectsImgContainerDoctor,.LatestProjectsImgContainerEcommerce{
+        padding: 4rem;
+        height: 20vh;
+    }
+
+    .LatestProjectsDescription{
+        column-gap: 1rem;
+        padding: 0;
+    }
+    .LatestProjectTitle{
+        margin: 0.2rem 0;
+    }
+}
+
+@media screen and (max-width:350px) {
+    .LatestProjectsSection{
+        width: 90%;
+        margin: 1rem auto;
+    }
+    .LatestProjectContent{
+        grid-template-columns: 1fr;
+        row-gap: 1rem;
+    }
+
+    .LatestProjectsImgContainer{
+        padding: 4rem;
+    }
+
+    .LatestProjectsDescription{
+        column-gap: 1rem;
+        padding: 0;
+    }
+    .LatestProjectTitle{
+        margin: 0.2rem 0;
+    }
+}
